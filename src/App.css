@@ -24,6 +24,14 @@
   font-variation-settings: "wdth" 100;
 }
 
+.dynapuff {
+  font-family: "DynaPuff", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 50px;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -101,4 +109,21 @@ span {
 
 .nav > img {
   height: 40px;
+}
+
+.lamp {
+  width: 100px;
+  position: absolute;
+  z-index: 1;
+  bottom: 2px;
+  right: 20px;
+}
+
+p {
+  color: white;
+  font-family: "dynapuff";
+  position: absolute;
+  z-index: 1;
+  bottom: 140px;
+  right: 90px;
 }

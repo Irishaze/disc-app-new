@@ -1,17 +1,18 @@
 import "./App.css";
-import vectorLogo from "./icon.png";
+import meovvLogo from "./icon.png";
 import discover from "./assets/discover.png";
 import add from "./assets/add.png";
 import likes from "./assets/likes.png";
 import messages from "./assets/messages.png";
 import me from "./assets/me.png";
+import lamp from "./assets/lamp.png";
 
 function App() {
   return (
     <>
       <div class="background">
         <div class="container">
-          <img src={vectorLogo} alt="Vector Logo" />
+          <img src={meovvLogo} alt="Meovv Logo" />
           <h2 class="item">
             Find Your
             <br /> People Here at
@@ -29,6 +30,7 @@ function App() {
           </footer>
         </div>
         <NavBar></NavBar>
+        <Lamp></Lamp>
       </div>
     </>
   );
@@ -38,12 +40,21 @@ function NavBar() {
   return (
     <>
       <div class="nav">
-        <img src={discover}></img>
-        <img src={messages}></img>
-        <img src={add}></img>
-        <img src={likes}></img>
-        <img src={me}></img>
+        <img src={discover} alt="discover icon"></img>
+        <img src={messages} alt="messages icon"></img>
+        <img src={add} alt="add icon"></img>
+        <img src={likes} alt="likes icon"></img>
+        <img src={me} alt="home icon"></img>
       </div>
+    </>
+  );
+}
+
+function Lamp() {
+  return (
+    <>
+      <p>click me!</p>
+      <img class="lamp" src={lamp}></img>
     </>
   );
 }
