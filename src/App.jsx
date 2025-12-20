@@ -1,6 +1,5 @@
 import "./App.css";
 import React, { useState, useEffect } from "react";
-import bgImage from "./Background.png";
 import meovvLogo from "./icon.png";
 import discover from "./assets/discover.png";
 import add from "./assets/add.png";
