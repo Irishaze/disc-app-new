@@ -151,9 +151,9 @@ span {
   position: relative;
   background-color: #57564f;
   height: 370px;
-  margin: 18px;
+  margin: 10px;
   width: 270px;
-  border-radius: 10px;
+  border-radius: 12px;
 }
 
 .flex-container {
@@ -166,8 +166,8 @@ span {
 .profile {
   height: 300px;
   width: 270px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
 }
 
 .heart {
@@ -181,4 +181,15 @@ span {
   position: absolute;
   bottom: 4px;
   left: 12px;
+}
+
+.flex-container-2 {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 10px 20px 10px;
+}
+
+.flex-container-2 img {
+  height: 40px;
+  z-index: 2;
 }

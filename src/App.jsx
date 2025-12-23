@@ -50,7 +50,15 @@ function randomIntFromInterval(min, max) {
 }
 
 function Header() {
-  return <img src="./src/assets/menu_bar.png" />;
+  return (
+    <>
+      <div className="flex-container-2">
+        <img id="menu" src="./src/assets/menu_bar.png" />
+        <img id="logo" src="./src/assets/logo.png" />
+        <img id="search" src="./src/assets/search.png" />
+      </div>
+    </>
+  );
 }
 
 function UsersPage() {
@@ -69,22 +77,25 @@ function UsersPage() {
     getAllUsers();
   }, []);
   return (
-    <div className="flex-container">
-      {users.map((user) => (
-        <div className="user" key={user.id}>
-          <img className="profile" src={user.profilePicture} />
-          <p>
-            {user.firstName} {user.lastName}
-          </p>
-          <br />
-          <p>{user.major}</p>
-          <div className="heart">
-            <img src="./src/assets/heart.png" />
-            <p>{randomIntFromInterval(100, 200)}</p>
+    <>
+      <Header />
+      <div className="flex-container">
+        {users.map((user) => (
+          <div className="user" key={user.id}>
+            <img className="profile" src={user.profilePicture} />
+            <p>
+              {user.firstName} {user.lastName}
+            </p>
+            <br />
+            <p>{user.major}</p>
+            <div className="heart">
+              <img src="./src/assets/heart.png" />
+              <p>{randomIntFromInterval(100, 200)}</p>
+            </div>
           </div>
-        </div>
-      ))}
-    </div>
+        ))}
+      </div>
+    </>
   );
 }
 
